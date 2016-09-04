@@ -167,9 +167,13 @@ header .intro-text .skills {
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
+    padding: 4px 15px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+  }
+  .navbar-custom .navbar-brand img {
+    height: 40px;
   }
   .navbar-custom.affix {
     padding: 10px 0;
@@ -196,6 +200,9 @@ section.services {
 section.about {
   background: #C7531A;
   color: white;
+}
+section.portfolio {
+  background: #dddddd;
 }
 @media (max-width: 767px) {
   section {

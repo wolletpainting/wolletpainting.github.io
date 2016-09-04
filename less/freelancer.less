@@ -184,9 +184,13 @@ header {
         transition: padding 0.3s;
 	    .navbar-brand {
 	        font-size: 2em;
+          padding: 4px 15px;
 	        -webkit-transition: all 0.3s;
 	        -moz-transition: all 0.3s;
 	        transition: all 0.3s;
+          img {
+            height: 40px;
+          }
 	    }
     }
     .navbar-custom.affix {
@@ -218,6 +222,10 @@ section.services {
 section.about {
 	background: @theme-about;
 	color: white;
+}
+
+section.portfolio {
+  background: #dddddd;
 }
 
 @media(max-width:767px) {
