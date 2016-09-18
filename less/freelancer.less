@@ -2,7 +2,7 @@
 @import "mixins.less";
 
 body {
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
 }
 
@@ -24,7 +24,7 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -121,6 +121,7 @@ header {
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
+  	padding-bottom: 10px;
 	border: none;
 	a:focus {
 		outline: none;
@@ -132,6 +133,9 @@ header {
 		&:active,
 		&.active {
 			color: white;
+		}
+		img {
+			height:42px;
 		}
 	}
 	.navbar-nav {
@@ -165,7 +169,7 @@ header {
 	.navbar-toggle {
 		color: white;
 		text-transform: uppercase;
-		font-size: 10px;
+		font-size: 18px;
 		border-color: white;
 		&:hover,
 		&:focus {
@@ -178,7 +182,7 @@ header {
 
 @media(min-width:768px) {
     .navbar-custom {
-        padding: 25px 0;
+        padding: 25px 0 40px 0; 
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -189,14 +193,18 @@ header {
 	        -moz-transition: all 0.3s;
 	        transition: all 0.3s;
           img {
-            height: 40px;
+            height: 60px;
           }
 	    }
     }
     .navbar-custom.affix {
-        padding: 10px 0;
+        padding: 10px 0 14px 0;
 		.navbar-brand {
 	        font-size: 1.5em;
+
+			img {
+              height: 46px;
+          	}
 	    }
 	}
 }
