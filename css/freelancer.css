@@ -4,11 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 p {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 p.small {
   font-size: 16px;
@@ -38,7 +38,7 @@ hr.star-primary {
   border-top: solid 5px;
   text-align: center;
   max-width: 250px;
-  margin: 25px auto 60px;
+  margin: 25px auto 40px;
 }
 hr.star-light:after,
 hr.star-primary:after {
@@ -88,7 +88,9 @@ header .intro-text .name {
   font-size: 2em;
 }
 header .intro-text .skills {
-  font-weight: 300;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: lightgrey;
 }
 header .intro-text .phone {
   display: block;
@@ -200,6 +202,9 @@ section h2 {
   margin: 0;
   font-size: 3em;
 }
+section h3 {
+  color: lightgrey;
+}
 section.success {
   background: #C7531A;
   color: white;
@@ -208,9 +213,17 @@ section.services {
   background: #2C3E50;
   color: white;
 }
+section.services li {
+  color: lightgrey;
+  font-size: 1.2em;
+}
 section.about {
   background: #C7531A;
   color: white;
+}
+section.about li {
+  color: lightgrey;
+  font-size: 1.2em;
 }
 section.portfolio {
   background: #2c3e50;
