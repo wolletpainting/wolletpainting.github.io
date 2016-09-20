@@ -88,8 +88,12 @@ header .intro-text .name {
   font-size: 2em;
 }
 header .intro-text .skills {
-  font-size: 1.25em;
   font-weight: 300;
+}
+header .intro-text .phone {
+  display: block;
+  font-size: 1.75em;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   header .container {
