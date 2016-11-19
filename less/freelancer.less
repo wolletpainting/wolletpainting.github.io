@@ -2,12 +2,13 @@
 @import "mixins.less";
 
 body {
-	font-family: "Segoe UI",Verdana,"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Work Sans", "Segoe UI",Verdana,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:200;
 	overflow-x: hidden;
 }
 
 p {
-	font-size: 1.2em;
+	font-size: 1.125em;
 }
 
 p.small {
@@ -24,9 +25,12 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Taviraj", "Montserrat", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*
+  font-family: "Montserrat", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
-	font-weight: 700;
+  */
+	font-weight: 900;
 }
 
 hr.star-light,
@@ -87,14 +91,14 @@ header {
 	.intro-text {
 		.name {
 			display: block;
-			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-family: "Taviraj","Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: 2em;
 		}
 		.skills {
 			font-size:1.25em;
-			font-weight: 400; 
+			font-weight: 400;
 			color: lightgrey;
 		}
 		.phone {
@@ -124,7 +128,7 @@ header {
 
 .navbar-custom {
 	background: @theme-primary;
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Taviraj","Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
   	padding-bottom: 10px;
@@ -188,7 +192,7 @@ header {
 
 @media(min-width:768px) {
     .navbar-custom {
-        padding: 25px 0 40px 0; 
+        padding: 25px 0 40px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
