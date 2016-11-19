@@ -37,13 +37,17 @@ h6 {
   font-weight: 200;
 }
 h3 {
-  font-size: 1.75em;
-  font-weight: 400;
+  font-size: 2.25em;
+  font-weight: 300;
   line-height: 1.25;
+}
+hr.star-light,
+hr.star-primary {
+  color: #777;
 }
 /*
 
-hr.star-light,
+,
 hr.star-primary {
     padding: 0;
     border: none;
@@ -131,8 +135,9 @@ header .intro-text .phone {
 .navbar-custom {
   background: #2C3E50;
   font-family: "Roboto", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875em;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
   padding-bottom: 10px;
   border: none;
 }
@@ -223,6 +228,7 @@ section p {
 section h2 {
   margin: 0;
   font-size: 3em;
+  font-weight: 700;
 }
 section ul {
   padding-left: 20px;
@@ -248,7 +254,7 @@ section.portfolio {
     padding: 75px 0;
   }
   section.first {
-    padding-top: 55px;
+    padding-top: 75px;
   }
 }
 #portfolio .portfolio-item {
@@ -344,9 +350,6 @@ section.portfolio {
 }
 .floating-label-form-group-with-focus label {
   color: #C7531A;
-}
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #ccc;
 }
 footer {
   color: white;
@@ -511,6 +514,9 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-content h2 {
   margin: 0;
   font-size: 3em;
+}
+.portfolio-modal .modal-content p {
+  font-size: 1.5em;
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
