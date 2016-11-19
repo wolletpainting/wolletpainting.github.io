@@ -1,15 +1,15 @@
 /*!
- * Start Bootstrap - WolletPainting v0.3.1 (http://WolletPainting.com)
+ * Start Bootstrap - WolletPainting v0.5.0 (http://WolletPainting.com)
  * Copyright 2013-2016 Scott Wade <sc0ttwad3@gmail.com
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  font-family: "Work Sans", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-family: "Roboto", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
 }
-p {
-  font-size: 1.125em;
+ul li {
+  font-size: 1.123em;
 }
 p.small {
   font-size: 16px;
@@ -28,46 +28,61 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Taviraj", "Montserrat", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*
   font-family: "Montserrat", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
   */
-  font-weight: 900;
+  text-transform: uppercase;
+  font-weight: 200;
 }
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+  line-height: 1.25;
+}
+/*
+
 hr.star-light,
 hr.star-primary {
-  padding: 0;
-  border: none;
-  border-top: solid 5px;
-  text-align: center;
-  max-width: 250px;
-  margin: 25px auto 40px;
+    padding: 0;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 40px;
 }
+
 hr.star-light:after,
 hr.star-primary:after {
-  content: "\f005";
-  font-family: FontAwesome;
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 2em;
-  padding: 0 0.25em;
+    content: "\f005";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 2em;
+    padding: 0 0.25em;
 }
+
 hr.star-light {
-  border-color: white;
+    border-color: white;
 }
+
 hr.star-light:after {
-  background-color: #C7531A;
-  color: white;
+    background-color: @theme-success;
+    color: white;
 }
+
 hr.star-primary {
-  border-color: #2C3E50;
+    border-color: @theme-primary;
 }
+
 hr.star-primary:after {
-  background-color: white;
-  color: #2C3E50;
+    background-color: white;
+    color: @theme-primary;
 }
+
+*/
 .img-centered {
   margin: 0 auto;
 }
@@ -86,14 +101,14 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Taviraj", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
 }
 header .intro-text .skills {
   font-size: 1.25em;
-  font-weight: 400;
+  font-weight: 200;
   color: lightgrey;
 }
 header .intro-text .phone {
@@ -115,7 +130,7 @@ header .intro-text .phone {
 }
 .navbar-custom {
   background: #2C3E50;
-  font-family: "Taviraj", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   padding-bottom: 10px;
@@ -202,12 +217,15 @@ header .intro-text .phone {
 section {
   padding: 100px 0;
 }
+section p {
+  font-size: 1.25em;
+}
 section h2 {
   margin: 0;
   font-size: 3em;
 }
-section h3 {
-  color: lightgrey;
+section ul {
+  padding-left: 20px;
 }
 section.success {
   background: #C7531A;
@@ -217,17 +235,9 @@ section.services {
   background: #2C3E50;
   color: white;
 }
-section.services li {
-  color: lightgrey;
-  font-size: 1.2em;
-}
 section.about {
   background: #C7531A;
   color: white;
-}
-section.about li {
-  color: lightgrey;
-  font-size: 1.2em;
 }
 section.portfolio {
   background: #2c3e50;
@@ -238,7 +248,7 @@ section.portfolio {
     padding: 75px 0;
   }
   section.first {
-    padding-top: 75px;
+    padding-top: 55px;
   }
 }
 #portfolio .portfolio-item {
@@ -293,7 +303,7 @@ section.portfolio {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #ccc;
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
@@ -326,7 +336,7 @@ section.portfolio {
 }
 .floating-label-form-group:not(:first-child) {
   padding-left: 14px;
-  border-left: 1px solid #eeeeee;
+  border-left: 1px solid #ccc;
 }
 .floating-label-form-group-with-value label {
   top: 0;
@@ -336,7 +346,7 @@ section.portfolio {
   color: #C7531A;
 }
 form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #ccc;
 }
 footer {
   color: white;

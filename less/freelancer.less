@@ -1,14 +1,16 @@
 @import "variables.less";
 @import "mixins.less";
 
+
+
 body {
-	font-family: "Work Sans", "Segoe UI",Verdana,"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight:200;
+	font-family: @sans-font-stack;
+  font-weight:300;
 	overflow-x: hidden;
 }
 
-p {
-	font-size: 1.125em;
+ul li {
+	font-size: 1.123em;
 }
 
 p.small {
@@ -25,13 +27,24 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Taviraj", "Montserrat", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: @sans-font-stack;
 	/*
   font-family: "Montserrat", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
   */
-	font-weight: 900;
+	text-transform: uppercase;
+	font-weight: 200;
+
 }
+
+h3 {
+	font-size:1.75em;
+	font-weight:400;
+	line-height: 1.25;
+
+}
+
+/*
 
 hr.star-light,
 hr.star-primary {
@@ -72,6 +85,8 @@ hr.star-primary:after {
     color: @theme-primary;
 }
 
+*/
+
 .img-centered {
 	margin: 0 auto;
 }
@@ -91,14 +106,14 @@ header {
 	.intro-text {
 		.name {
 			display: block;
-			font-family: "Taviraj","Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-family: @sans-font-stack;
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: 2em;
 		}
 		.skills {
 			font-size:1.25em;
-			font-weight: 400;
+			font-weight: 200;
 			color: lightgrey;
 		}
 		.phone {
@@ -128,7 +143,7 @@ header {
 
 .navbar-custom {
 	background: @theme-primary;
-	font-family: "Taviraj","Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: @sans-font-stack;
 	text-transform: uppercase;
 	font-weight: 700;
   	padding-bottom: 10px;
@@ -220,14 +235,18 @@ header {
 }
 
 section {
+		p {
+			font-size:1.25em;
+		}
     padding: 100px 0;
     h2 {
     	margin: 0;
     	font-size: 3em;
     }
-	h3 {
-		color: lightgrey;
-	}
+
+		ul {
+  		padding-left: 20px;
+		}
 }
 
 section.success {
@@ -238,19 +257,13 @@ section.success {
 section.services {
 	background: @theme-services;
 	color: white;
-	li {
-		color: lightgrey;
-		font-size: 1.2em;
-	}
+
 }
 
 section.about {
 	background: @theme-about;
 	color: white;
-	li {
-		color: lightgrey;
-		font-size: 1.2em;
-	}
+
 }
 
 section.portfolio {
@@ -263,7 +276,7 @@ section.portfolio {
 		padding: 75px 0;
 	}
 	section.first {
-		padding-top: 75px;
+		padding-top: 55px;
 	}
 }
 
@@ -325,7 +338,7 @@ section.portfolio {
     position: relative;
     margin-bottom: 0;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid @gray-lighter;
+    border-bottom: 1px solid #ccc;
     input,
     textarea {
 	    z-index: 1;
@@ -357,7 +370,7 @@ section.portfolio {
     }
     &:not(:first-child) {
 	    padding-left: 14px;
-	    border-left: 1px solid @gray-lighter;
+	    border-left: 1px solid #ccc;
     }
 }
 
@@ -375,7 +388,7 @@ section.portfolio {
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid @gray-lighter;
+    border-top: 1px solid #ccc;
 }
 
 footer {
