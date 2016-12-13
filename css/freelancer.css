@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  font-family: "Roboto", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   overflow-x: hidden;
 }
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*
   font-family: "Montserrat", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
@@ -41,9 +41,11 @@ h3 {
   font-weight: 300;
   line-height: 1.25;
 }
-hr.star-light,
-hr.star-primary {
-  color: #777;
+hr {
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #d5d5d5;
+  width: 3em;
 }
 /*
 
@@ -108,7 +110,7 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Roboto", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
@@ -137,7 +139,7 @@ header .intro-text .phone {
 }
 .navbar-custom {
   background: #2C3E50;
-  font-family: "Roboto", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.875em;
   text-transform: uppercase;
   font-weight: 300;
@@ -225,20 +227,33 @@ header .intro-text .phone {
 section {
   padding: 100px 0;
 }
+section .container {
+  margin-top: 2em;
+}
 section p {
-  font-size: 1.15em;
+  font-size: 1em;
+  font-weight: 300;
   margin-bottom: 1.5em;
+  color: #d5d5d5;
 }
 section h2 {
   margin: 0;
   font-size: 3em;
-  font-weight: 700;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+section h3 {
+  font-size: 1.5em;
+  font-weight: 900;
 }
 section ul {
   padding-left: 0px;
 }
 section ul li {
+  text-transform: uppercase;
+  font-size: 1em;
   list-style: none;
+  margin-bottom: .5em;
 }
 section.success {
   background: #C7531A;

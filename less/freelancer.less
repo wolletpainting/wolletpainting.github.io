@@ -44,8 +44,14 @@ h3 {
 
 }
 
+hr {
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid #d5d5d5;
+	width: 3em;
+}
+
 hr.star-light, hr.star-primary {
-  color: #777;
 }
 /*
 
@@ -243,25 +249,38 @@ header {
 }
 
 section {
+
+		.container {
+			margin-top:2em;
+		}
+
 		p {
-			font-size:1.15em;
+			font-size:1em;
+			font-weight:300;
 			margin-bottom:1.5em;
+			color: #d5d5d5;
 		}
     padding: 100px 0;
     h2 {
     	margin: 0;
     	font-size: 3em;
-			font-weight:700;
+			font-weight:300;
+      text-transform: uppercase;
     }
 
 		h3 {
+			font-size:1.5em;
+			font-weight:900;
 		}
 
 		ul {
   		padding-left: 0px;
 
 			li {
+				text-transform: uppercase;
+				font-size:1em;
 				list-style: none;
+        margin-bottom:.5em;
 			}
 		}
 }
