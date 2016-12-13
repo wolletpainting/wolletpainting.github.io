@@ -91,7 +91,7 @@ hr.star-primary:after {
   margin: 0 auto;
 }
 .img-paint-icons {
-  height: 50px;
+  height: 70px;
 }
 header {
   text-align: center;
@@ -226,7 +226,8 @@ section {
   padding: 100px 0;
 }
 section p {
-  font-size: 1.25em;
+  font-size: 1.15em;
+  margin-bottom: 1.5em;
 }
 section h2 {
   margin: 0;
@@ -234,7 +235,10 @@ section h2 {
   font-weight: 700;
 }
 section ul {
-  padding-left: 20px;
+  padding-left: 0px;
+}
+section ul li {
+  list-style: none;
 }
 section.success {
   background: #C7531A;
