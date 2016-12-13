@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - WolletPainting v0.5.0 (http://WolletPainting.com)
+ * Start Bootstrap - WolletPainting v0.9.0 (http://WolletPainting.com)
  * Copyright 2013-2016 Scott Wade <sc0ttwad3@gmail.com
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
@@ -89,6 +89,9 @@ hr.star-primary:after {
 */
 .img-centered {
   margin: 0 auto;
+}
+.img-paint-icons {
+  height: 50px;
 }
 header {
   text-align: center;
