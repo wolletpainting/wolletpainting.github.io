@@ -101,12 +101,25 @@ hr.star-primary:after {
 }
 
 .img-paint-icons {
-  height: 70px;
+  height: 90px;
+	vertical-align: middle;
+	margin-bottom: 1.5em;
+	display:block;
+	margin: auto;
+}
+
+.homepage-grid-icons {
+
 }
 
 header {
 	text-align: center;
-	background: @theme-success;
+  background: url('..\img\hero-bkg-porch-staining.jpg')  no-repeat center center;
+	-webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+	//background: @theme-success;
 	color: white;
 	.container {
 		padding-top: 100px;
@@ -114,25 +127,30 @@ header {
 	}
 	img {
 		display: block;
-		margin: 0 auto 20px;
+		margin: 0 auto;
 	}
 	.intro-text {
 		.name {
 			display: block;
 			font-family: @sans-font-stack;
 			text-transform: uppercase;
-			font-weight: 700;
-			font-size: 2em;
+			font-weight: 300;
+			font-size: 1.75em;
+			line-height:1.125em;
+
 		}
 		.skills {
-			font-size:1.25em;
+			font-size:1.75em;
 			font-weight: 200;
 			color: lightgrey;
 		}
 		.phone {
 			display: block;
-			font-size: 1.75em;
+			font-size: 2.25em;
 			font-weight: 700;
+
+			margin-top:2em;
+			color: @theme-primary;
 		}
 	}
 }
@@ -251,7 +269,7 @@ header {
 section {
 
 		.container {
-			margin-top:2em;
+			margin-top:2.75em;
 		}
 
 		p {
@@ -263,24 +281,26 @@ section {
     padding: 100px 0;
     h2 {
     	margin: 0;
-    	font-size: 3em;
+    	font-size: 3.5em;
 			font-weight:300;
       text-transform: uppercase;
     }
 
 		h3 {
-			font-size:1.5em;
+			font-size:1.25em;
 			font-weight:900;
+      margin-bottom: 1.5em;
 		}
 
 		ul {
-  		padding-left: 0px;
+  		padding-left:1.25em;
+			padding-bottom: 2em;
 
 			li {
 				text-transform: uppercase;
-				font-size:1em;
-				list-style: none;
+				font-size:0.875em;
         margin-bottom:.5em;
+		color:#d5d5d5;
 			}
 		}
 }
@@ -305,6 +325,10 @@ section.about {
 section.portfolio {
   background: rgb(44, 62, 80);
   color: white;
+}
+
+section.request {
+  background: @theme-request;
 }
 
 @media(max-width:767px) {

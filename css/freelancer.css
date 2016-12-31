@@ -93,11 +93,19 @@ hr.star-primary:after {
   margin: 0 auto;
 }
 .img-paint-icons {
-  height: 70px;
+  height: 90px;
+  vertical-align: middle;
+  margin-bottom: 1.5em;
+  display: block;
+  margin: auto;
 }
 header {
   text-align: center;
-  background: #C7531A;
+  background: url('..\img\hero-bkg-porch-staining.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: white;
 }
 header .container {
@@ -106,24 +114,27 @@ header .container {
 }
 header img {
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto;
 }
 header .intro-text .name {
   display: block;
   font-family: "Nunito Sans", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2em;
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 1.125em;
 }
 header .intro-text .skills {
-  font-size: 1.25em;
+  font-size: 1.75em;
   font-weight: 200;
   color: lightgrey;
 }
 header .intro-text .phone {
   display: block;
-  font-size: 1.75em;
+  font-size: 2.25em;
   font-weight: 700;
+  margin-top: 2em;
+  color: #2C3E50;
 }
 @media (min-width: 768px) {
   header .container {
@@ -228,7 +239,7 @@ section {
   padding: 100px 0;
 }
 section .container {
-  margin-top: 2em;
+  margin-top: 2.75em;
 }
 section p {
   font-size: 1em;
@@ -238,22 +249,24 @@ section p {
 }
 section h2 {
   margin: 0;
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: 300;
   text-transform: uppercase;
 }
 section h3 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 900;
+  margin-bottom: 1.5em;
 }
 section ul {
-  padding-left: 0px;
+  padding-left: 1.25em;
+  padding-bottom: 2em;
 }
 section ul li {
   text-transform: uppercase;
-  font-size: 1em;
-  list-style: none;
+  font-size: 0.875em;
   margin-bottom: .5em;
+  color: #d5d5d5;
 }
 section.success {
   background: #C7531A;
@@ -270,6 +283,9 @@ section.about {
 section.portfolio {
   background: #2c3e50;
   color: white;
+}
+section.request {
+  background: #d5d6d2;
 }
 @media (max-width: 767px) {
   section {
