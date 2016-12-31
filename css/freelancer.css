@@ -101,12 +101,12 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: url('..\img\hero-bkg-porch-staining.jpg') no-repeat center center;
+  background: url('..\img\hero-bkg-porch-staining.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white;
+  color: #111;
 }
 header .container {
   padding-top: 100px;
@@ -120,21 +120,19 @@ header .intro-text .name {
   display: block;
   font-family: "Nunito Sans", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 900;
   font-size: 1.75em;
   line-height: 1.125em;
 }
 header .intro-text .skills {
   font-size: 1.75em;
   font-weight: 200;
-  color: lightgrey;
 }
 header .intro-text .phone {
   display: block;
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 900;
   margin-top: 2em;
-  color: #2C3E50;
 }
 @media (min-width: 768px) {
   header .container {
@@ -180,7 +178,7 @@ header .intro-text .phone {
 }
 .navbar-custom .navbar-nav li a:hover {
   color: #C7531A;
-  outline: none;
+  outline: 1px solid;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
