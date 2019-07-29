@@ -1,14 +1,22 @@
 /*!
- * Start Bootstrap - WolletPainting v0.3.1 (http://WolletPainting.com)
- * Copyright 2013-2016 Scott Wade <sc0ttwad3@gmail.com
+ * Start Bootstrap - WolletPainting v0.9.0 (http://WolletPainting.com)
+ * Copyright 2013-2017 Scott Wade <sc0ttwad3@gmail.com
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+html {
+  background: url('..\img\hero-bkg-porch-staining.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
-  font-family: "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
 }
-p {
-  font-size: 1.2em;
+ul li {
+  font-size: 1.123em;
 }
 p.small {
   font-size: 16px;
@@ -27,50 +35,106 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Nunito Sans", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*
   font-family: "Montserrat", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+  */
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 200;
 }
-hr.star-light,
+h3 {
+  font-size: 2.25em;
+  font-weight: 300;
+  line-height: 1.25;
+}
+hr {
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #d5d5d5;
+  width: 3em;
+}
+/*
+
+,
 hr.star-primary {
-  padding: 0;
-  border: none;
-  border-top: solid 5px;
-  text-align: center;
-  max-width: 250px;
-  margin: 25px auto 40px;
+    padding: 0;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 40px;
 }
+
 hr.star-light:after,
 hr.star-primary:after {
-  content: "\f005";
-  font-family: FontAwesome;
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 2em;
-  padding: 0 0.25em;
+    content: "\f005";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 2em;
+    padding: 0 0.25em;
 }
+
 hr.star-light {
-  border-color: white;
+    border-color: white;
 }
+
 hr.star-light:after {
-  background-color: #C7531A;
-  color: white;
+    background-color: @theme-success;
+    color: white;
 }
+
 hr.star-primary {
-  border-color: #2C3E50;
+    border-color: @theme-primary;
 }
+
 hr.star-primary:after {
-  background-color: white;
-  color: #2C3E50;
+    background-color: white;
+    color: @theme-primary;
+}
+
+*/
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;
+    /* 50% */
+  }
 }
 .img-centered {
   margin: 0 auto;
 }
+.img-paint-icons {
+  height: 5em;
+  vertical-align: middle;
+  margin-bottom: 1.5em;
+  display: block;
+  margin: auto;
+}
 header {
   text-align: center;
-  background: #C7531A;
-  color: white;
+  background: url('..\img\front-cover.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #111;
+  height: 640px;
 }
 header .container {
   padding-top: 100px;
@@ -78,24 +142,25 @@ header .container {
 }
 header img {
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto;
 }
 header .intro-text .name {
   display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2em;
+  font-weight: 900;
+  font-size: 1.75em;
+  line-height: 1.125em;
 }
 header .intro-text .skills {
-  font-size: 1.25em;
-  font-weight: 400;
-  color: lightgrey;
+  font-size: 1.75em;
+  font-weight: 200;
 }
 header .intro-text .phone {
   display: block;
-  font-size: 1.75em;
-  font-weight: 700;
+  font-size: 2.25em;
+  font-weight: 900;
+  margin-top: 2em;
 }
 @media (min-width: 768px) {
   header .container {
@@ -111,9 +176,10 @@ header .intro-text .phone {
 }
 .navbar-custom {
   background: #2C3E50;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875em;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
   padding-bottom: 10px;
   border: none;
 }
@@ -140,7 +206,7 @@ header .intro-text .phone {
 }
 .navbar-custom .navbar-nav li a:hover {
   color: #C7531A;
-  outline: none;
+  outline: 1px solid;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
@@ -198,12 +264,35 @@ header .intro-text .phone {
 section {
   padding: 100px 0;
 }
+section .container {
+  margin-top: 2.75em;
+}
+section p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 1.5em;
+  color: #d5d5d5;
+}
 section h2 {
   margin: 0;
-  font-size: 3em;
+  font-size: 3.5em;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 section h3 {
-  color: lightgrey;
+  font-size: 1.25em;
+  font-weight: 900;
+  margin-bottom: 1.5em;
+}
+section ul {
+  padding-left: 1.25em;
+  padding-bottom: 2em;
+}
+section ul li {
+  text-transform: uppercase;
+  font-size: 0.875em;
+  margin-bottom: .5em;
+  color: #d5d5d5;
 }
 section.success {
   background: #C7531A;
@@ -213,21 +302,16 @@ section.services {
   background: #2C3E50;
   color: white;
 }
-section.services li {
-  color: lightgrey;
-  font-size: 1.2em;
-}
 section.about {
   background: #C7531A;
   color: white;
 }
-section.about li {
-  color: lightgrey;
-  font-size: 1.2em;
-}
 section.portfolio {
   background: #2c3e50;
   color: white;
+}
+section.request {
+  background: #d5d6d2;
 }
 @media (max-width: 767px) {
   section {
@@ -330,9 +414,6 @@ section.portfolio {
 }
 .floating-label-form-group-with-focus label {
   color: #C7531A;
-}
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #ccc;
 }
 footer {
   color: white;
@@ -497,6 +578,9 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-content h2 {
   margin: 0;
   font-size: 3em;
+}
+.portfolio-modal .modal-content p {
+  font-size: 1.5em;
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
